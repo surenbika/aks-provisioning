@@ -16,9 +16,9 @@ az ad sp create-for-rbac
 
 6. Create terraform.tfvars for assigning values to vairables:
 
-a. client_id = <app_id of your service principal>
+	a. client_id = <app_id of your service principal>
 
-b. client_secret = <password of your service_principal>
+	b. client_secret = <password of your service_principal>
 
 7. Create a terraform.gitignore to ignore secret files(tfstate, .terraform folder, tfvars file etc)
 
