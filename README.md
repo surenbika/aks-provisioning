@@ -12,18 +12,20 @@ az ad sp create-for-rbac
 
 4. Create k8s.tf having details about kubernetes cluster
 
-5. Create variables.tf file for variable declaration and default values
+5. Apart from provisioing kubernetes cluster and related resources, this config file will also provision Azure storage account and a file share. this will be used by our application for persistent storage
 
-6. Create terraform.tfvars for assigning values to variables:
+6. Create variables.tf file for variable declaration and default values
+
+7. Create terraform.tfvars for assigning values to variables:
 
 	a. client_id = app_id of your service principal
 
 	b. client_secret = password from your service principal
 
-7. Create a terraform.gitignore to ignore secret files(tfstate, .terraform folder, tfvars file etc)
+8. Create a terraform.gitignore to ignore secret files(tfstate, .terraform folder, tfvars file etc)
 
-8. Run terraform init
+9. Run terraform init
 
-9. Run terraform plan
+10. Run terraform plan
 
-10. Run terraform apply
+11. Run terraform apply
